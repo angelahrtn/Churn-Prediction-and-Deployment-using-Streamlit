@@ -32,6 +32,7 @@ def main():
     has_cr_card = 1 if has_cr_card == 'Yes' else 0
     is_active_member = 1 if is_active_member == 'Yes' else 0
     gender_male = 1 if gender == 'Male' else 0
+    gender_female = 1 if gender == 'Female' else 0
 
     # Prepare data for prediction
     input_data = pd.DataFrame({
@@ -44,9 +45,11 @@ def main():
         'IsActiveMember': [is_active_member],
         'EstimatedSalary': [estimated_salary],
         # One-hot encoding for geography
+        'Geo_France': [1 if geography == 'France' else 0],
         'Geo_Germany': [1 if geography == 'Germany' else 0],
         'Geo_Spain': [1 if geography == 'Spain' else 0],
         # One-hot encoding for gender
+        'Gender_Female': [gender_female]
         'Gender_Male': [gender_male]
     })
 
