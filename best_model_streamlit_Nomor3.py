@@ -44,8 +44,8 @@ def main():
         'IsActiveMember': [is_active_member],
         'EstimatedSalary': [estimated_salary],
         # One-hot encoding for geography
-        'Geography_Germany': [1 if geography == 'Germany' else 0],
-        'Geography_Spain': [1 if geography == 'Spain' else 0],
+        'Geo_Germany': [1 if geography == 'Germany' else 0],
+        'Geo_Spain': [1 if geography == 'Spain' else 0],
         # One-hot encoding for gender
         'Gender_Male': [gender_male]
     })
