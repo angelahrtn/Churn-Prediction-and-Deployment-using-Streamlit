@@ -49,7 +49,7 @@ def main():
         'Geo_Germany': [1 if geography == 'Germany' else 0],
         'Geo_Spain': [1 if geography == 'Spain' else 0],
         # One-hot encoding for gender
-        'Gender_Female': [gender_female]
+        'Gender_Female': [gender_female],
         'Gender_Male': [gender_male]
     })
 
