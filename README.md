@@ -75,7 +75,7 @@ Techniques like adjusting class weights and focusing on precision-recall balance
 
 # Conclusion
 This project successfully applied machine learning techniques to predict customer churn and deployed the best-performing model using Streamlit. 
-After comparing multiple models, XGBoost was selected for deployment due to its superior performance on the evaluation metrics. 
+After comparing multiple models, XGBoost Tuned was selected for deployment due to its superior performance on the evaluation metrics. 
 The Streamlit app allows users to interact with the model, input customer data, and receive predictions on whether the customer is likely to churn.
 
 Further improvements could include refining the user interface, adding more customer features, 
